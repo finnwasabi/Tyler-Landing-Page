@@ -1,0 +1,682 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;
+}
+
+
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt8px {
+    margin-top: 8px;
+}
+
+.mt16px {
+    margin-top: 16px;
+}
+
+.mt-16px {
+    margin-top: -64px;
+    margin-bottom: -64px;
+}
+
+.mb30px {
+    margin-bottom: 30px;
+}
+
+/* #main {} */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+
+}
+
+#nav li {
+    padding: 0 4px;
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 12px 24px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    color: black;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#nav .subnav {
+    display: none;
+    top: 100%;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    display: block;
+    color: black;
+    padding: 0 12px;
+    margin: 4px 0;
+    line-height: 40px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+#slider {
+    margin-top: 55px;
+    padding-top: 45%;
+    width: 100%;
+    background: url(https://wallpapers.com/images/featured/tyler-the-creator-be45bge2dvlskkol.jpg) center / cover no-repeat;
+    position: relative;
+
+    .text-content {
+        color: white;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-heading {
+        font-size: 40px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    }
+
+    .text-discription {
+        font-size: 20px;
+        margin-top: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    }
+}
+
+#content {
+
+    .content-section {
+        width: 1000px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100px 16px;
+        text-align: center;
+    }
+
+    .section-heading {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 10px;
+    }
+
+    .section-sub-heading {
+        font-style: italic;
+        font-weight: 300;
+        margin-top: 25px;
+        color: #5f5e5e;
+    }
+
+    .about-text {
+        font-weight: 500;
+        margin-top: 25px;
+        text-align: justify;
+        line-height: 30px;
+    }
+}
+
+.albumcovers {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.albumcovers-name {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: #f44336;
+        cursor: pointer;
+    }
+}
+
+.albumcovers-item {
+    text-decoration: none;
+    color: black;
+}
+
+.albumcovers-item:hover {
+    transform: translateY(-6px);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.albumcovers-img {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.albumcovers-img:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.2s;
+}
+
+.container {
+    position: relative;
+    --size-button: 42px;
+    color: white;
+}
+
+.input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #191A1E;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.input:focus:hover {
+    background-color: #0e0e0e;
+}
+
+.input:focus,
+.input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input:hover {
+    background-color: #f44336;
+}
+
+.input:focus+.icon,
+.input:not(:invalid)+.icon {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+}
+
+.container .icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-section {
+    /* background-color: black; */
+    background-image: url(../img/tourBG/tour-BG.png);
+    margin: 64px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .section-heading {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+    }
+
+    .section-sub-heading {
+        color: white !important;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 2);
+        margin-bottom: 25px;
+    }
+}
+
+.ticket-list {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    color: black;
+
+    .grey-out {
+        color: #757575;
+    }
+}
+
+.ticket-list li {
+    padding: 20px 16px;
+    text-align: left;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.ticket-list .sold-out {
+    color: white;
+    padding: 4px 6px;
+    background-color: #f44336;
+    border-radius: 5px;
+}
+
+.ticket-list .quantity {
+    color: white;
+    float: right;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-top: -2.5px;
+}
+
+.places-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 20px; */
+}
+
+.place-item {
+    display: block;
+    width: 310px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.place-img {
+    width: 100%;
+    height: 210px;
+    background-size: contain;
+    background-position: center;
+}
+
+.place-img:hover {
+    filter: brightness(50%);
+    transition: all ease 0.1s;
+}
+
+.place-body {
+    padding: 16px;
+}
+
+.place-heading {
+    margin-bottom: 16px;
+}
+
+.place-time {
+    margin-bottom: 16px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-bottom: 16px;
+}
+
+button {
+    color: white;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: black;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background-color: #FFC0CB;
+    background-image: url(../img/btn/btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    color: black;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+button.js-buy-ticket {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#pay-tickets {
+    width: 100%;
+    height: 60px;
+}
+
+#pay-tickets:after {
+    background-color: #009688;
+    background-image: url(../img/btn/clipart1594776.png);
+}
+
+.modal-check {
+    padding-left: 2px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFC0CB;
+    height: 130px;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 6px;
+    top: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    margin-bottom: 24px;
+}
+
+.ticket-icon {
+    margin-right: 10px;
+}
+
+.modal-container {
+    position: relative;
+    background: white;
+    width: 900px;
+    max-width: calc(100% - 40px);
+    min-height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: floatDown ease-in-out 0.3s;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+@keyframes floatDown {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.contact-info i[class*="fa-solid fa-"] {
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-link {
+    color: #ffb2bf;
+}
+
+.contact-link:hover {
+    color: #ee9daa;
+}
+
+.form-submit {
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px 16px;
+    border-radius: 5px;
+    float: right;
+    font-family: poppins, sans-serif;
+}
+
+.form-submit:after {
+    background-color: white;
+    background-image: url(https://img.freepik.com/premium-vector/spray-painted-graffiti-mail-icon-sprayed-isolated-with-white-background-graffiti-envelope-with-spray-black-white-vector-illustration_731105-235.jpg?w=2000);
+}
+
+.map-section {
+    width: 100%;
+}
+
+.map-img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+
+    .socials-list {
+        font-size: 30px;
+    }
+
+    .socials-list a {
+        text-decoration: none;
+        color: #757575;
+        padding-right: 5px;
+    }
+}
+
+#footer .copyright {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #757575;
+}
+
+#footer .copyright a {
+    color: #757575;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    filter: brightness(1.3);
+}
+
+.mobile-menu-btn {
+    color: white;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 4px;
+    height: 52px;
+    display: none;
+}
+
+.mobile-menu-icon {
+    line-height: 0;
+}
+
+.mobile-menu-btn:hover {
+    color: black;
+    background-color: #FFC0CB;
+}

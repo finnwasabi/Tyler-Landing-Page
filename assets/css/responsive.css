@@ -1,0 +1,134 @@
+@media (max-width: 1204px) and (min-width: 845px) {
+    .albumcovers {
+        margin: 60px 0 0;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #footer {
+        padding: 44px 0 44px;
+    }
+}
+
+@media (max-width: 844px) {
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-align-center {
+        text-align: center;
+    }
+
+    .s-full-width {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    #nav {
+        display: block;
+        width: 100%;
+    }
+
+    #nav>li {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+    }
+
+    #nav .subnav a {
+        padding: 10px 36px;
+    }
+
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search {
+        display: none;
+    }
+
+    #nav>li>a {
+        line-height: 52px;
+        padding: 0 24px;
+        display: block;
+        margin: 4px 0;
+    }
+
+    #slider {
+        margin-top: 59px;
+        height: 784px;
+    }
+
+    .albumcovers {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .albumcovers-item {
+        margin-top: 60px;
+    }
+
+    .albumcovers-img {
+        height: 100%;
+    }
+
+    .albumcovers-name {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .places-list {
+        display: block;
+    }
+
+    .place-img {
+        height: 100%;
+    }
+
+    .place-item {
+        margin-top: 20px;
+        width: 100%
+    }
+
+    #content .content-section {
+        padding-bottom: 50px;
+    }
+
+    .map-section {
+        margin-top: 50px;
+    }
+
+    .contact-form {
+        margin-top: 16px;
+    }
+
+    .form-submit {
+        align-items: center;
+        float: none;
+        margin: 16px auto 0;
+    }
+
+    #footer {
+        padding: 44px 0 44px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
