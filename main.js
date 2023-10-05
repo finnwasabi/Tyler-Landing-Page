@@ -31,3 +31,6 @@ function getFullName(person) {
 }
 
 console.log(persons.map(getFullName));
+console.log(Math.PI);
+console.log(Math.ceil(Math.PI));
+console.log(Math.floor(Math.random() * 10));
