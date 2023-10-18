@@ -288,7 +288,7 @@ html {
 
 .tour-section {
     /* background-color: black; */
-    background-image: url(../img/tourBG/tour-BG.png);
+    background-image: url(../img/tourBG/tour-BG-compressed.png);
     margin: 64px 0;
     background-size: cover;
     background-repeat: no-repeat;
