@@ -1,4 +1,4 @@
-// alert("Hi there my chocolate bar!");
+alert("Hi there my chocolate bar!");
 
 let mybutton = document.getElementById("go-to-top-btn");
 
