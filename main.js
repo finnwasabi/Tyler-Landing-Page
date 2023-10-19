@@ -87,5 +87,6 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     infinite: true,
     arrows: false,
+    pauseOnHover: false,
   });
 });
