@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler, The Creator</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/btn/btn.png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <style>
         /* width */
         ::-webkit-scrollbar {
@@ -46,7 +48,7 @@
 </head>
 
 <body>
-    <div id="main">
+    < id="main">
         <div id="header">
             <ul id="nav">
                 <li><a href="#">home</a></li>
@@ -84,24 +86,47 @@
                 <i class="mobile-menu-icon fa-solid fa-bars"></i>
             </div>
         </div>
-        <div id="slider">
-            <div class="text-content">
-                <h2 class="text-heading">Odd Future</h2>
-                <div class="text-discription">Wolf Gang Kill Them All, often abbreviated as OF or OFWGKTA</div>
-            </div>
-        </div>
+
+
         <div id="content">
+            <div class="slider auto-slider">
+                <div class="slider-item slider-1">
+                    <img class="slider-img" src="./assets/img/slider/slider1.jpg" alt="cailon">
+                    <div class="text-container">
+                        <h2 class="text-heading">Odd Future</h2>
+                        <div class="text-discription">Wolf Gang Kill Them All, often abbreviated as OF or OFWGKTA</div>
+                    </div>
+                </div>
+                <div class="slider-item slider-2">
+                    <img class="slider-img" src="./assets/img/slider/slider2.jpg" alt="cailon">
+                    <div class="text-container">
+                        <h2 class="text-heading">The Fashionista</h2>
+                        <div class="text-discription">The prettiest motherhugger pop up on the scence</div>
+                    </div>
+                </div>
+                <div class="slider-item slider-3">
+                    <img class="slider-img" src="./assets/img/slider/slider3.jpg" alt="cailon">
+                    <div class="text-container">
+                        <h2 class="text-heading">Flower Boy</h2>
+                        <div class="text-discription">Making art, spreading love with tunes and bars</div>
+                    </div>
+                </div>
+            </div>
             <div id="albums" class="content-section mb30px">
                 <h2 class="section-heading">THE ALBUMS</h2>
                 <p class="section-sub-heading">Artistic evolution, blending diverse musical</p>
                 <p class="about-text">Tyler, the Creator's recent albums have been a testament to his artistic
                     evolution.
                     With each release, he consistently pushes the boundaries of his music, seamlessly blending an
-                    eclectic mix of genres, from rap and R&B to jazz and funk. This sonic diversity not only keeps his
+                    eclectic mix of genres, from rap and R&B to jazz and funk. This sonic diversity not only keeps
+                    his
                     audience engaged but also showcases his ability to experiment and innovate. Beyond the music,
-                    Tyler's lyrics have taken on a more introspective and thought-provoking tone, exploring themes of
-                    self-discovery, identity, and personal growth. This combination of evolving musical style and deeper
-                    lyrical content has firmly established Tyler, the Creator as a dynamic and influential artist in the
+                    Tyler's lyrics have taken on a more introspective and thought-provoking tone, exploring themes
+                    of
+                    self-discovery, identity, and personal growth. This combination of evolving musical style and
+                    deeper
+                    lyrical content has firmly established Tyler, the Creator as a dynamic and influential artist in
+                    the
                     contemporary music landscape, continually surprising and delighting fans and critics alike.</p>
                 <div class="albumcovers">
                     <a href="https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o" class="albumcovers-item">
@@ -153,7 +178,8 @@
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Mon 30 Nov 2023</p>
-                                <p class="place-desc">Throw some heat to the crowd. Make it bounce like it should!</p>
+                                <p class="place-desc">Throw some heat to the crowd. Make it bounce like it should!
+                                </p>
                                 <button class="js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
@@ -209,125 +235,49 @@
             </div>
             <p class="copyright">Powered by <a href="https://nhattung.myportfolio.com/">Finn.Wasabi</a></p>
         </div>
-    </div>
-
-    <div class="modal js-modal">
-        <div class="modal-container js-modal-container">
-            <div class="modal-close js-modal-close">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <header class="modal-header">
-                <i class="ticket-icon fa-solid fa-ticket"></i>
-                Check Out
-            </header>
-            <div class="modal-body">
-                <label for="ticket-quantity" class="modal-label">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Tickets, 150$ per person
-                </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
-                <label for="ticket-email" class="modal-label">
-                    <i class="fa-solid fa-user"></i>
-                    Send to
-                </label>
-                <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email...">
-
-                <button id="pay-tickets">PAY<i class="modal-check fa-solid fa-check"></i></button>
-            </div>
-            <footer class="modal-footer">
-                <p class="modal-help">Need <a href="">help?</a></p>
-            </footer>
         </div>
-    </div>
 
-    <button id="go-to-top-btn" onclick="topFunction()">Go Top</button>
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="ticket-icon fa-solid fa-ticket"></i>
+                    Check Out
+                </header>
+                <div class="modal-body">
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Tickets, 150$ per person
+                    </label>
+                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+                    <label for="ticket-email" class="modal-label">
+                        <i class="fa-solid fa-user"></i>
+                        Send to
+                    </label>
+                    <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email...">
 
-    <script>
-        let mybutton = document.getElementById("go-to-top-btn");
+                    <button id="pay-tickets">PAY<i class="modal-check fa-solid fa-check"></i></button>
+                </div>
+                <footer class="modal-footer">
+                    <p class="modal-help">Need <a href="">help?</a></p>
+                </footer>
+            </div>
+        </div>
 
-        window.onscroll = function () { scrollFunction() };
+        <button id="go-to-top-btn" onclick="topFunction()">Go Top</button>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                mybutton.style.display = "flex";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+        <div class="overlay"></div>
+        <div class="success-modal">
+            <p>SUCCESS</p>
+        </div>
 
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalClose = document.querySelector('.js-modal-close')
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-        function closeBuyTickets() {
-            modal.classList.remove('open')
-        }
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-        modalClose.addEventListener('click', closeBuyTickets)
-        modal.addEventListener('click', closeBuyTickets)
-        modalContainer.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-    </script>
-
-    <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clientHeight;
-        mobileMenu.onclick = function () {
-            var isClosed = header.clientHeight === headerHeight;
-            if (isClosed) {
-                header.style.height = 'auto';
-            }
-            else {
-                header.style.height = null;
-            }
-        }
-
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        for (var i = 0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i];
-            menuItem.onclick = function (event) {
-                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-                if (isParentMenu) {
-                    event.preventDefault();
-                } else {
-                    header.style.height = null;
-                }
-            }
-        }
-    </script>
-    <div class="overlay"></div>
-    <div class="success-modal">
-        <p>SUCCESS</p>
-    </div>
-    <script>
-        // JavaScript code to show the "SUCCESS" message and dim the background
-        document.getElementById('pay-tickets').addEventListener('click', function () {
-            // Show the overlay and success message
-            document.querySelector('.overlay').style.display = 'block';
-            document.querySelector('.success-modal').style.display = 'block';
-
-            // Automatically close the message and remove the overlay after 3 seconds
-            setTimeout(function () {
-                document.querySelector('.overlay').style.display = 'none';
-                document.querySelector('.success-modal').style.display = 'none';
-            }, 1500); // seconds
-        });
-    </script>
-    <script src="./main.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./main.js"></script>
 </body>
 
 </html>

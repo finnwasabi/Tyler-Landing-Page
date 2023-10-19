@@ -129,19 +129,63 @@ html {
     margin-right: 24px;
 }
 
-#slider {
+/* #slider {
+    height: 850px;
     margin-top: 55px;
-    padding-top: 45%;
-    width: 100%;
-    background: url(../img/slider/slider1.jpg) center / cover no-repeat;
     position: relative;
 
+    .slider-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .text-content {
-        color: white;
+        color: black;
         position: absolute;
         bottom: 50px;
         width: 100%;
         text-align: center;
+    }
+
+    .text-heading {
+        font-size: 40px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    }
+
+    .text-discription {
+        font-size: 20px;
+        margin-top: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    }
+} */
+
+.slider {
+    position: relative;
+
+    .slider-item {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .slider-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+    }
+
+    .text-container {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+        color: white;
     }
 
     .text-heading {
@@ -287,7 +331,6 @@ html {
 }
 
 .tour-section {
-    /* background-color: black; */
     background-image: url(../img/tourBG/tour-BG-compressed.png);
     margin: 64px 0;
     background-size: cover;
