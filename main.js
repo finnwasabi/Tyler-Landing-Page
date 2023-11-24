@@ -1,5 +1,10 @@
 alert("Hi there my chocolate bar!");
 
+// function addDarkmodeWidget() {
+//   new Darkmode().showWidget();
+// }
+// window.addEventListener("load", addDarkmodeWidget);
+
 let mybutton = document.getElementById("go-to-top-btn");
 
 window.onscroll = function () {
